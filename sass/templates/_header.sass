@@ -1,9 +1,7 @@
 .header
-    position: fixed
-    left: 0
-    top: 0
-    width: 100%
+    position: relative
     z-index: 99
+    width: 100%
     background-color: $dark
     padding: 24px 0
 .menu
@@ -12,6 +10,7 @@
 	align-items: center
 
 .logo
+    font-size: 1.075rem  
     color: $primary
     text-transform: uppercase
     
@@ -20,7 +19,10 @@
         color: $light
         text-decoration: none
         text-transform: uppercase
-        margin-right: 40px
+        margin-right: 2.5rem
+        transition: color 0.2s
+        &:hover
+            color: $primary
 
 .phone
     color: $primary
